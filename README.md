@@ -1,6 +1,8 @@
 # configs
 Configure files for commonly used apps
 
-Usage:
-1. Rename the file/directory by replacing `_` with `.`
-2. Place the new file/directory in `$HOME` directory.
+Notes:
+- The `_xxx` file/directory corresponds to the `.xxx` file/directory in `$HOME` folder.
+- Please do not just rename the file/directory and replace the original ones. 
+- Instead, copy the content and paste it to proper position to make sure it works as expected.
+- Always backup the original files !
