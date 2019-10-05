@@ -58,3 +58,10 @@ user add key Left  {rotate y by -90}
 user add key Right {rotate y by  90}
 user add key Down  {rotate x by  90}
 user add key Up    {rotate x by -90}
+
+user add key q     {mol modcolor top 0 SegName}
+user add key w     {mol modstyle top 0 NewCartoon 0.3 10.0 4.1 0}
+user add key e     {mol modmaterial top 0 AOChalky}
+user add key a     {axes location off}
+user add key d     {color Display Background white}
+user add key f     {mol modcolor top 0 SegName; mol modstyle top 0 NewCartoon 0.3 10.0 4.1 0; mol modmaterial top 0 AOChalky; axes location off; color Display Background white}
