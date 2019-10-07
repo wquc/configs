@@ -24,12 +24,17 @@ alias pc="pwd | tee /dev/tty | tr -d '\n' | xclip -i"
 
 # make backup for a file
 bak() {
-        cp $1{,.BAK}
+    cp $1{,.BAK}
+}
+
+# make backup for a file with date (add %H%M for hours and minutes)
+bakk() {
+    cp $1{,.BAK-`date +%m%d%y`}
 }
 
 # fetch a PDB file from RCSB site
 fetch() {
-       wget ""https://files.rcsb.org/download/$1.pdb""
+    wget ""https://files.rcsb.org/download/$1.pdb""
 }
 
 # extract commonly used compressed files
