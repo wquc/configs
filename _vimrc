@@ -14,3 +14,13 @@ set showcmd
 set showmatch
 set incsearch
 set foldenable
+
+set number
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+
+set cursorline
+highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+
+"se mouse+=a
+"se mouse=a
+set clipboard=unnamedplus
