@@ -49,6 +49,10 @@ after idle {
       light 2 off
       light 3 off
     }
+    # font setup, usually not necessary for Linux
+    # if {1} {
+    #  tkcon font Consolas 12
+    # }
   }
 }
 
