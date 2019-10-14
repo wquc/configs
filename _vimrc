@@ -1,3 +1,4 @@
+"Syntax highlighting
 au BufRead,BufNewFile *.inp set filetype=charmm
 au! Syntax charmm source $HOME/.vim/syntax/charmm.vim
 au BufNewfile,Bufread *.src set filetype=fortran
@@ -5,6 +6,7 @@ au BufNewfile,Bufread *.fcm set filetype=fortran
 au BufNewfile,Bufread *.str set filetype=charmm
 au BufNewfile,Bufread *.namd set filetype=namd
 
+"Indentation and other editing options
 set hlsearch
 set tabstop=4
 set shiftwidth=4
@@ -24,3 +26,6 @@ highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 "se mouse+=a
 "se mouse=a
 set clipboard=unnamedplus
+
+"Hotkey to remove line numbers
+map <F2> :set nonu <CR>
