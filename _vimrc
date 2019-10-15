@@ -29,3 +29,5 @@ set clipboard=unnamedplus
 
 "Hotkey to remove line numbers
 map <F2> :set nonu <CR>
+map <F3> :set nu   <CR>
+
