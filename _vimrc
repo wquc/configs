@@ -27,7 +27,6 @@ highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 "se mouse=a
 set clipboard=unnamedplus
 
-"Hotkey to remove line numbers
-map <F2> :set nonu <CR>
-map <F3> :set nu   <CR>
-
+map <F2> :set invnumber <CR>
+map <F3> :set invhlsearch <CR>
+map <F4> :set invignorecase <CR>
