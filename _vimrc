@@ -27,6 +27,7 @@ highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 "se mouse=a
 set clipboard=unnamedplus
 
+map <CR> o<Esc>
 map <F2> :set invnumber <CR>
 map <F3> :set invhlsearch <CR>
 map <F4> :set invignorecase <CR>
