@@ -23,11 +23,21 @@ highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE gui
 set cursorline
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 
-"se mouse+=a
-"se mouse=a
 set clipboard=unnamedplus
 
-map <CR> o<Esc>
-map <F2> :set invnumber <CR>
-map <F3> :set invhlsearch <CR>
-map <F4> :set invignorecase <CR>
+nnoremap <CR> o<Esc>
+nnoremap <F2> :set invnumber <CR>
+nnoremap <F3> :set invhlsearch <CR>
+nnoremap <F4> :set invignorecase <CR>
+nnoremap <buffer> <F5> :exec '!python3' shellescape(@%, 1)<CR>
+
+" Commenting blocks of code.
+autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
+autocmd FileType sh,ruby,python   let b:comment_leader = '# '
+autocmd FileType conf,fstab       let b:comment_leader = '# '
+autocmd FileType tex              let b:comment_leader = '% '
+autocmd FileType mail             let b:comment_leader = '> '
+autocmd FileType vim              let b:comment_leader = '" '
+autocmd FileType charmm,fortran   let b:comment_leader = '! '
+noremap <F9>  :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <F10> :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
