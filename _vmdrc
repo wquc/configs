@@ -6,13 +6,22 @@ after idle {
 
     # <menus>
     # state : active
+    # if { 1 } {
+    #   ### optimized for FHD 15' monitors (ThinkPad X1E)
+    #   menu main on ; menu main move 1000 100
+    #   menu graphics on ; menu graphics move 650 100
+    #   menu tkcon on ; menu tkcon move 1000 400
+    #   menu files off ; menu files move 125 325
+    # }
+    
     if { 1 } {
-      # optimized for FHD 15' monitors (x1extreme)
-      menu main on ; menu main move 1000 100
-      menu graphics on ; menu graphics move 650 100
-      menu tkcon on ; menu tkcon move 1000 400
+      ### optimized for FHD 24' monitors (Dell S2418HN)
+      menu main on ; menu main move 1279 115
+      menu graphics on ; menu graphics move 928 116
+      menu tkcon on ; menu tkcon move 1281 397
       menu files off ; menu files move 125 325
     }
+
     # </menus>
 
     # <display>
