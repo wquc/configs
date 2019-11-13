@@ -19,8 +19,13 @@ alias CP='cp -rv'
 alias RM='rm -rvf'
 alias md='mkdir'
 alias cdd='cd -P'
+
 # requires [xclip] installed
 alias pc="pwd | tee /dev/tty | tr -d '\n' | xclip -i"
+
+# requires [vim] installed
+alias vv='gnome-terminal -- vim > /dev/null 2>&1'
+
 
 # make backup for a file
 bak() {
