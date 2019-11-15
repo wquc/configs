@@ -26,6 +26,8 @@ alias pc="pwd | tee /dev/tty | tr -d '\n' | xclip -i"
 # requires [vim] installed
 alias vv='gnome-terminal -- vim > /dev/null 2>&1'
 
+# requires [inkscape] installed
+alias ik='inkscape'
 
 # make backup for a file
 bak() {
