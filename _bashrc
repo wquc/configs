@@ -1,3 +1,6 @@
+# better color scheme for 777 files
+LS_COLORS="$LS_COLORS:ow=103;30;01"
+
 alias ls='ls -v -Isnap --group-directories-first --color=auto --hide="*.pyc"'
 alias ll='ls -alF'
 alias la='ls -A'
