@@ -21,5 +21,10 @@ Pause::
 ; [Win] + [Del] to open trash (recycle bin)
 #Del::RUN ::{645ff040-5081-101b-9f08-00aa002f954e} 
 
-; or [Win] + [Del] to empty trash (recycle bin)
-; #Del::FileRecycleEmpty
+; Win+Del to empty trash (recycle bin)
+; #Del::FileRecycleEmpty 
+
+; [Alt] + [W] to close active window
+!W::
+    WinClose, A
+    Return
