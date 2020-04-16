@@ -26,5 +26,11 @@ Pause::
 
 ; [Alt] + [W] to close active window
 !W::
-    WinClose, A
+    WinGetActiveTitle, Title
+    WinClose, %Title%
+    return
+
+; [Ctrl] + [Alt] + [E] to open Evernote
+^!E::
+    Run, "C:\Program Files (x86)\Yinxiang Biji\Yinxiang Biji\Evernote.exe"
     Return
