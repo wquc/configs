@@ -21,7 +21,8 @@ set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
 set cursorline
-highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+highlight clear CursorLine
+hi CursorLineNr term=bold cterm=bold ctermfg=003 gui=bold
 
 set clipboard=unnamedplus
 
