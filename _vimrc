@@ -25,6 +25,9 @@ highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 
 set clipboard=unnamedplus
 
+"Comment color
+hi Comment ctermfg=Gray
+
 nnoremap <CR> o<Esc>
 nnoremap <F2> :set invnumber <CR>
 nnoremap <F3> :set invhlsearch <CR>
