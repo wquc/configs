@@ -1,3 +1,5 @@
+PS1="[ \u@\h:\W ]$ "
+
 # better color scheme for 777 files
 LS_COLORS="$LS_COLORS:ow=103;30;01"
 
@@ -22,15 +24,6 @@ alias CP='cp -rv'
 alias RM='rm -rvf'
 alias md='mkdir'
 alias cdd='cd -P'
-
-# requires [xclip] installed
-alias pc="pwd | tee /dev/tty | tr -d '\n' | xclip -i"
-
-# requires [vim] installed
-alias vv='gnome-terminal -- vim > /dev/null 2>&1'
-
-# requires [inkscape] installed
-alias ik='inkscape'
 
 # make backup for a file
 bak() {
