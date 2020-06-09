@@ -1,7 +1,7 @@
 # better color scheme for 777 files
 LS_COLORS="$LS_COLORS:ow=103;30;01"
 
-alias ls='ls -v -Isnap --group-directories-first --color=auto --hide="*.pyc"'
+alias ls='ls -v --group-directories-first --color=auto --hide="*.pyc"'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -48,7 +48,7 @@ fetch() {
 }
 
 # extract commonly used compressed files
-extract () {
+x () {
    if [ -f $1 ] ; then
        case $1 in
            *.tar.bz2)   tar xvjf $1    ;;
