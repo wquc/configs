@@ -21,7 +21,7 @@ Although the .rc files are quite self-explanatory, the following will highlight 
 - `bak`  : make backup for a file
 - `bakk` : make backup for a file with date (add %H%M for hours and minutes)
 - `fetch`: fetch a PDB file from RCSB site based on its PDB code
-- `extract` : extract commonly used compressed files
+- `x`    : extract commonly used compressed files
 
 #### VIM configuration
 Besides the syntax highlighting for commonly used programming language. The following hotkeys are enabled:
