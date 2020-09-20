@@ -3,6 +3,7 @@ export PS1="\[\e[1;33m\]\u\[\e[m\]\[\e[1;33m\]@\[\e[m\]\[\e[1;33m\]\h\[\e[m\]:\W
 # better color scheme for 777 files
 LS_COLORS="$LS_COLORS:ow=103;30;01"
 
+# Traditional
 alias ls='ls -v --group-directories-first --color=auto --hide="*.pyc"'
 alias ll='ls -alF'
 alias la='ls -A'
@@ -20,10 +21,16 @@ alias hg='history | grep'
 alias vb='vi ~/.bashrc'
 alias sb='source ~/.bashrc'
 alias f='xdg-open'
-alias CP='cp -rv'
-alias RM='rm -rvf'
 alias md='mkdir'
 alias cdd='cd -P'
+alias CP='cp -rv'
+alias RM='rm -rvf'
+alias CHMOD='chmod -R'
+
+# For WSL
+alias o='explorer.exe'
+alias n='cmd.exe /c notepad++.exe'
+export DISPLAY=127.0.0.1:0.0 
 
 # make backup for a file
 bak() {
