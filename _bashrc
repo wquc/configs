@@ -70,4 +70,4 @@ x () {
 }
 
 bind 'set completion-ignore-case on'
-DOMESTICPIPSRC="-i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com"
+PIPSRC="https://pypi.tuna.tsinghua.edu.cn/simple/"
