@@ -26,9 +26,8 @@ alias RM='rm -rvf'
 alias CHMOD='chmod -R'
 
 # For WSL
-alias o='explorer.exe'
-alias n='cmd.exe /c notepad++.exe'
-export DISPLAY=127.0.0.1:0.0 
+# alias o='explorer.exe'
+# export DISPLAY=127.0.0.1:0.0 
 
 # make backup for a file
 bak() {
@@ -69,5 +68,5 @@ x () {
 
 bind 'set completion-ignore-case on'
 export PIPSRC="https://pypi.tuna.tsinghua.edu.cn/simple/"   # Domestic PIP source
-export HISTTIMEFORMAT="%F %T "  # timestamp of history command
+HISTTIMEFORMAT=`echo -e "\033[0;36m" [%F %T] "\033[0m" `    # timestamp of history command with color
 # export PS1="\[\e[1;33m\]\u\[\e[m\]\[\e[1;33m\]@\[\e[m\]\[\e[1;33m\]\h\[\e[m\]:\W\\$ "
