@@ -29,11 +29,9 @@ set clipboard=unnamedplus
 "Comment color
 hi Comment ctermfg=Gray
 
-nnoremap <CR> o<Esc>
 nnoremap <F2> :set invnumber <CR>
 nnoremap <F3> :set invhlsearch <CR>
 nnoremap <F4> :set invignorecase <CR>
-nnoremap <buffer> <F5> :exec '!python3' shellescape(@%, 1)<CR>
 
 " Commenting blocks of code.
 autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
