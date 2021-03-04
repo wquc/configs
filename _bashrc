@@ -1,5 +1,5 @@
 LS_COLORS="$LS_COLORS:ow=103;30;01"                       # better color scheme for 777 files
-HISTTIMEFORMAT=`echo -e "\033[0;36m" [%F %T] "\033[0m" `  # timestamp of history command with color
+HISTTIMEFORMAT=`echo -e "\033[1;30m" [%F %T] "\033[0m" `  # timestamp of history command with color
 
 # Common
 alias ls='ls -v --group-directories-first --color=auto --hide="*.pyc"'
