@@ -24,6 +24,9 @@ alias cdd='cd -P'
 alias CP='cp -rv'
 alias RM='rm -rvf'
 alias CHMOD='chmod -R'
+alias pip='pip3'
+alias python='python3'
+alias jkl='jupyter lab' # need jupyterlab installed 
 
 # For WSL
 # alias o='explorer.exe'
