@@ -17,6 +17,11 @@
     Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
     Return
 
+; [Ctrl] + [Alt] + [J] to open JupyterLab in Chrome (makesure JupyterLab is Online)
+^!J::
+    Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "http://localhost:8888/lab"
+    Return
+
 ; [Ctrl] + [Alt] + [I] to open Inkscape
 ^!I::
    Run, "C:\Program Files\Inkscape\inkscape.exe"
