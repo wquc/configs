@@ -2,23 +2,6 @@ LS_COLORS="$LS_COLORS:ow=103;30;01"                       # better color scheme 
 
 HISTTIMEFORMAT=`echo -e "\033[1;30m" %F %T "\033[0m" `    # timestamp of history command with color
 
-# elapsed time since the execution of a command, input example: 2021-03-23 17:01:20 (as defined in HISTTIMEFORMAT)
-elapsed () {
-    start_time="$1 $2"
-    start_time=`date -d "$start_time" +%s`
-    end_time=`date -u +%s`
-    elapsed=$(($end_time-$start_time))
-    local T=$elapsed
-    local D=$((T/60/60/24))
-    local H=$((T/60/60%24))
-    local M=$((T/60%60))
-    local S=$((T%60))
-    (( $D > 0 )) && printf '%d days ' $D
-    (( $H > 0 )) && printf '%d hours ' $H
-    (( $M > 0 )) && printf '%d minutes ' $M
-    printf '%d seconds\n' $S
-}
-
 # Common
 alias ls='ls -v --group-directories-first --color=auto --hide="*.pyc"'
 alias ll='ls -alF'
@@ -48,6 +31,7 @@ alias jkl='jupyter lab' # need jupyterlab installed
 
 # For WSL
 # alias o='explorer.exe'
+# alias n='notepad.exe'
 # export DISPLAY=127.0.0.1:0.0 
 
 # make backup for a file
