@@ -71,6 +71,15 @@ x () {
    fi
 }
 
+# compress directory to tar.gz
+z () {
+    dirname=$1
+    if [ -d $dirname ]; then
+        tgzname=${dirname%%/}.tar.gz
+        tar -czvf $tgzname $dirname
+    fi
+}
+
 bind 'set completion-ignore-case on'
 export PIPSRC="https://pypi.tuna.tsinghua.edu.cn/simple/"   # Domestic PIP source
 # export PS1="\[\e[1;33m\]\u\[\e[m\]\[\e[1;33m\]@\[\e[m\]\[\e[1;33m\]\h\[\e[m\]:\W\\$ "
