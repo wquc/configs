@@ -49,6 +49,14 @@ fetch() {
     wget ""https://files.rcsb.org/download/$1.pdb""
 }
 
+# get full path of a file as input for rsync
+rget() {
+    host_addr=`hostname -I | cut -d ' ' -f1`
+    file_path=`readlink -f $1`
+    user_name=$USER
+    echo ${user_name}@${host_addr}:${file_path}
+}
+
 # extract commonly used compressed files
 x () {
    if [ -f $1 ] ; then
