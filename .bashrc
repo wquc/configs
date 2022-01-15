@@ -44,6 +44,11 @@ bakk() {
     cp $1{,.BAK-`date +%m%d%y`}
 }
 
+# make a directory by date
+mdd() {
+    mkdir BAK-`date +"%m-%d-%Y"`
+}
+
 # fetch a PDB file from RCSB site
 fetch() {
     wget ""https://files.rcsb.org/download/$1.pdb""
