@@ -51,6 +51,8 @@ nnoremap <F1> :NERDTreeToggle <CR>
 nnoremap <F2> :set invnumber <CR>
 nnoremap <F3> :set invhlsearch <CR>
 nnoremap <F4> :set invignorecase <CR>
+nnoremap <PageUp> 10k
+nnoremap <PageDown> 10j
 
 nmap f <Plug>(easymotion-s2)
 
