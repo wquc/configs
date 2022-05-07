@@ -1,0 +1,2 @@
+set ::tkcon::COLOR(bg) white
+tkcon font consolas 15
