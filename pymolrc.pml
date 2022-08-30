@@ -1,2 +1,2 @@
 set orthoscopic, on
-run C:\Users\wangq\pymolcmds.py
+run C:\Users\wangq\pymolrc.py
