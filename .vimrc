@@ -18,7 +18,8 @@ set cursorline
 highlight clear CursorLine
 hi CursorLineNr term=bold cterm=bold ctermfg=003 gui=bold
 
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
+set clipboard=unnamed
 
 set background=dark
 colorscheme hybrid
@@ -44,7 +45,6 @@ call plug#begin()
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'powerline/powerline'
-    Plug 'Yggdroot/indentLine'
 call plug#end()
 
 nnoremap <F1> :NERDTreeToggle <CR>
@@ -57,3 +57,12 @@ nnoremap <PageDown> 10j
 nmap f <Plug>(easymotion-s2)
 
 :let g:airline_section_b = '%{strftime("%H:%M")}'
+
+"Automatic closing brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
