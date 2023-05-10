@@ -1,29 +1,28 @@
 ;--------------------------------------------------------------------
-; [Ctrl] + [Alt] shortcuts
+; Open Applications
 ;--------------------------------------------------------------------
+RunOrActivate(ApplicationPath, ApplicationAhkExe)
+{
+    Process, Exist, %ApplicationAhkExe%
+    If Not ErrorLevel ; errorlevel will = 0 if process doesn't exist
+        Run, %ApplicationPath%
+    Else
+        WinActivate, ahk_exe %ApplicationAhkExe%
+    Return
+}
 
 ; [Ctrl] + [Alt] + [G] to open Google chrome
 ^!G::
-    Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+    RunOrActivate("C:\Program Files\Google\Chrome\Application\chrome.exe", "chrome.exe")
     Return
 
-; [Ctrl] + [Alt] + [J] to open JupyterLab in Chrome (makesure JupyterLab is Online)
-^!J::
-    Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "http://localhost:8888/lab"
-    Return
-
-; [Ctrl] + [Alt] + [N] to open Marxico to add a New Note
-^!N::
-    Run, "C:\Program Files (x86)\Maxiang\maxiang.exe"
-    Return
-
-; [Ctrl] + [Alt] + [T] to open Terminal
-^!T::
-    Run, "C:\Users\wangq\Documents\Shortcuts\terminal"
+; [Ctrl] + [Alt] + [D] to open Dictionary
+^!D::
+    Run, "C:\Users\wq\Documents\Shortcuts\Dictionary"
     Return
 
 ;--------------------------------------------------------------------
-; Other shortcuts
+; Utilities
 ;--------------------------------------------------------------------
 
 ; [Alt] + [Q] to close active window
